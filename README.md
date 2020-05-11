@@ -24,3 +24,5 @@ python download_glue_data.py --data_dir glue_data --tasks all
 ```
 
 ## Running Glue Example
+
+<img width="434" alt="becnhmarks" src="https://user-images.githubusercontent.com/14842967/81595312-462ab880-9390-11ea-944d-5eda5bccca4c.png">
