@@ -28,17 +28,17 @@ The following dataset should look like this:
 
 The pre-trained models are imported from the Transformers packages which contains the model I will be using, DistilBERT. First prepare the data which will be passed into the pre-trained DistilBERT model. The dataset is split into a training and testing which will be passed into the logistic regression model.
 
-Evaluating the model, here is the result of our prediction: 
+Evaluating the model, here is the result of our prediction:
 
 | Model    |      Accuracy |
 |----------|:-------------:|
 |DistilBERT |   82%        |
+|None       |  78%        |
 
+Using the DistilBERT model, we score around 82%. Now how does that compare to using logistic regression without the DistilBERT? When performing the same sentiment analysis process without it using logistic regression, we lose about 4% of the accuracy. There is only a small increase in accuracy when using DistilBERT so why use it? The real benefit of using it lies beyond just passing in our data through this BERT model.
 
-Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning. Due to limitations of my own hardware, I am not able to fine-tune this model. More information on fine-tuning and an example is provided below.
-
+Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning which is computationally more expensive.
 ## GLUE
-
 
 ### What is GLUE and Fine-Tuning?
 
