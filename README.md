@@ -28,7 +28,7 @@ The following dataset should look like this:
 
 The pre-trained models are imported from the Transformers packages which contains the model I will be using, DistilBERT. First prepare the data which will be passed into the pre-trained DistilBERT model. The dataset is split into a training and testing which will be passed into the logistic regression model.
 
-Evaluating the model, we score an accuracy of around 82%.
+Evaluating the model, here is the result of our prediction: 
 
 | Model    |      Accuracy |
 |----------|:-------------:|
