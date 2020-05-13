@@ -9,8 +9,6 @@ import torch
 import transformers as ppb
 import warnings
 
-from sklearn.ensemble import RandomForestClassifier
-
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 warnings.filterwarnings('ignore')

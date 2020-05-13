@@ -22,9 +22,20 @@ pip install .
 ### Using DistilBERT
 In the jupyter notebook file, _airline-sent.py_, I performed sentiment analysis using the DistilBERT model based off another open [source example](https://github.com/jalammar/jalammar.github.io/tree/master/notebooks/bert). The dataset I used is [Twitter US Airline Sentiment from Kaggle](https://www.kaggle.com/crowdflower/twitter-airline-sentiment). It contains tweets on each major airline in the US.
 
+The following dataset should look like this:
+![image](https://user-images.githubusercontent.com/14842967/81838842-b6624700-9514-11ea-8529-908be57d2766.png)
+
+
 The pre-trained models are imported from the Transformers packages which contains the model I will be using, DistilBERT. First prepare the data which will be passed into the pre-trained DistilBERT model. The dataset is split into a training and testing which will be passed into the logistic regression model.
 
-Evaluating the model, we score an accuracy of around 82%. Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning. Due to limitations of my own hardware, I am not able to fine-tune this model. More information on fine-tuning and an example is provided below.
+Evaluating the model, we score an accuracy of around 82%.
+
+| Model    |      Accuracy |
+|----------|:-------------:|
+|DistilBERT |   82%        |
+
+
+Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning. Due to limitations of my own hardware, I am not able to fine-tune this model. More information on fine-tuning and an example is provided below.
 
 ## GLUE
 
