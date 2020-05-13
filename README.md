@@ -37,7 +37,7 @@ Evaluating the model, here is the result of our prediction:
 
 Using the DistilBERT model, we score around 82%. Now how does that compare to using logistic regression without the DistilBERT? When performing the same sentiment analysis process without it using logistic regression, we lose about 4% of the accuracy. There is only a small increase in accuracy when using DistilBERT so why use it? The real benefit of using it lies beyond just passing in our data through this BERT model.
 
-Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning which is computationally more expensive.
+Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning which is computationally more expensive and beyond what my hardware can handle.
 ## GLUE
 
 ### What is GLUE and Fine-Tuning?
