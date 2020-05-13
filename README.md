@@ -20,10 +20,11 @@ cd transformers
 pip install .
 ```
 ### Using DistilBERT
-In the jupyter notebook file, _amazon-distilbert.ipynb_, I performed sentiment analysis using the DistilBERT model based off another open [source example](https://github.com/jalammar/jalammar.github.io/tree/master/notebooks/bert). Here, I'm using a dataset that contains tweets about different airlines.
-The pre-trained models are imported from the Transformers packages which contains DistilBERT. After preparing the data, it is passed into the pre-trained DistilBERT model. The dataset is split into a training and testing which will be passed into the logistic regression model.
+In the jupyter notebook file, _airline-sent.py_, I performed sentiment analysis using the DistilBERT model based off another open [source example](https://github.com/jalammar/jalammar.github.io/tree/master/notebooks/bert). The dataset I used is [Twitter US Airline Sentiment from Kaggle](https://www.kaggle.com/crowdflower/twitter-airline-sentiment). It contains tweets on each major airline in the US.
 
-Evaluating the model, we score an accuracy of around 80%. Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is fine-tuning. Due to my own hardware limitations, I am not able to fine-tune this model. More information on fine-tuning and an example is provided below.
+The pre-trained models are imported from the Transformers packages which contains the model I will be using, DistilBERT. First prepare the data which will be passed into the pre-trained DistilBERT model. The dataset is split into a training and testing which will be passed into the logistic regression model.
+
+Evaluating the model, we score an accuracy of around 82%. Our DistilBERT model can be trained to improve this score up to, but not limited to 90%. This process is called fine-tuning. Due to limitations of my own hardware, I am not able to fine-tune this model. More information on fine-tuning and an example is provided below.
 
 ## GLUE
 
